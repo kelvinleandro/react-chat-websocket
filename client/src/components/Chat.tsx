@@ -54,7 +54,7 @@ const Chat = ({ socket, username, room }: Props) => {
 
   return (
     <div className="w-full bg-white/10 backdrop-blur-md rounded-xl pb-8 pt-4 px-4">
-      <div className="w-full py-3 bg-slate-900 text-white font-bold text-center cursor-default">
+      <div className="w-full py-3 mb-2 bg-slate-900 text-white font-bold text-center cursor-default">
         <p>Room: {room}</p>
       </div>
       <div className="bg-transparent h-[70vh]">
@@ -66,7 +66,7 @@ const Chat = ({ socket, username, room }: Props) => {
             return (
               <div
                 key={index}
-                className={`flex flex-col p-2.5 mb-2 rounded-md w-80 ${
+                className={`flex flex-col p-2.5 mb-2 rounded-md w-[70%] sm:w-80 ${
                   message.author === username
                     ? "bg-purple-800 self-end"
                     : "bg-slate-800 self-start"
