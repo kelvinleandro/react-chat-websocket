@@ -8,23 +8,23 @@ SocketGram is a real-time chat application that allows users to join rooms by pr
 
 ## Features
 
-- Real-time messaging
-- Room-based chat
-- User-friendly interface
+- **Real-time messaging**
+- **Room-based chat**
+- **User-friendly interface**
 
 ## Technologies Used
 
 ### Frontend
 
-- Framework: Vite (React + TypeScript)
-- Styling: Tailwind CSS
+- **Framework**: Vite (React + TypeScript)
+- **Styling**: Tailwind CSS
 
 ### Backend
 
-- Server: Node.js
-- Framework: Express
-- Real-time Communication: Socket.IO
-- Cross-Origin Resource Sharing: CORS
+- **Server**: Node.js
+- **Framework**: Express
+- **Real-time Communication**: Socket.IO
+- **Cross-Origin Resource Sharing**: CORS
 
 ## Environment Configuration
 
