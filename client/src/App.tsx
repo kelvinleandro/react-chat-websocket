@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "./App.css";
 import io from "socket.io-client";
 import Chat from "./components/Chat";
 
-const SERVER_URL = import.meta.env.SERVER_URL || "http://localhost:3001";
-const socket = io(SERVER_URL);
+const VITE_SERVER_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3001";
+const socket = io(VITE_SERVER_URL);
 
 function App() {
   const [username, setUsername] = useState("");
