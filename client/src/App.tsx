@@ -2,7 +2,8 @@ import { useState } from "react";
 import io from "socket.io-client";
 import Chat from "./components/Chat";
 
-const VITE_SERVER_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3001";
+const PORT = import.meta.env.PORT || '3001';
+const VITE_SERVER_URL = import.meta.env.VITE_SERVER_URL || `http://localhost:${PORT}`;
 const socket = io(VITE_SERVER_URL);
 
 function App() {
