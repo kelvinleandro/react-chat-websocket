@@ -12,6 +12,7 @@ interface Props {
 
 interface Message {
   room: string;
+  id: string | undefined;
   author: string;
   message: string;
   time: string;
@@ -32,6 +33,7 @@ const Chat = ({ socket, username, room }: Props) => {
 
       const message: Message = {
         room,
+        id: socket.id,
         author: username,
         message: currentMessage,
         time: timeString,
@@ -67,7 +69,7 @@ const Chat = ({ socket, username, room }: Props) => {
               <div
                 key={index}
                 className={`flex flex-col p-2.5 mb-2 rounded-md w-[70%] sm:w-80 ${
-                  message.author === username
+                  message.id === socket.id
                     ? "bg-purple-800 self-end"
                     : "bg-slate-800 self-start"
                 }`}
